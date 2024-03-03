@@ -1,0 +1,97 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Fjalla+One&display=swap')
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(51, 228, 166);
+}
+
+.quote-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    padding: 40px;
+    width: 700px;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px  200px 0px rgba(0,0,0,0.5);
+}
+
+.quote-container h2{
+    font-size:32px ;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.quote-container h2::after{
+    content: '';
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    background: rgb(23, 124, 229);
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+}
+
+.quote-container blockquote{
+    font-family: "Caveat", cursive;
+    font-size: 26px;
+    min-height: 110px;
+    
+}
+.quote-container blockquote::before, .quote-container blockquote::after{
+    content: '"';
+}
+
+.quote-container span{
+    display: block;
+    margin-top: 10px;
+    position: relative;
+    float: right;
+}
+.quote-container span::before{
+    content: '';
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    background: rgb(23, 124, 229);
+}
+.quote-container div{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.quote-container button{
+    background:rgb(23, 124, 229);
+    color: #fff;
+    border-radius: 25px;
+    border: 1px solid black;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.quote-container button img{
+    width: 20px;
+    margin-right: 10px;
+}
+
+.quote-container button:nth-child(2){
+    background: transparent;
+    color: #333;
+}
